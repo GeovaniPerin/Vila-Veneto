@@ -13,13 +13,16 @@ body {
     padding-bottom: 120px;
 }
 
+img{
+    width: 100%;
+}
+
 /* Cabeçalho */
 .cabecalho {
-    background-color: #e74c3c;
-    color: white;
     text-align: center;
     padding: 2rem 0;
     margin-bottom: 2rem;
+    background-color: #e74c3c;
 }
 
 .cabecalho h1 {
@@ -411,25 +414,6 @@ body {
     padding-bottom: 120px;
 }
 
-/* Cabeçalho */
-.cabecalho {
-    background-color: #e74c3c;
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-    margin-bottom: 2rem;
-}
-
-.cabecalho h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.cabecalho p {
-    font-size: 1.2rem;
-    font-style: italic;
-}
-
 /* Menu */
 .menu {
     max-width: 1200px;
@@ -529,6 +513,31 @@ body {
 .endereco {
     margin-top: 1rem;
     text-align: center;
+}
+
+/* Estilo para o cabeçalho com logo */
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 80px; /* Ajuste conforme necessário */
+    width: auto;
+}
+
+/* Ajuste para mobile */
+@media (max-width: 768px) {
+    .logo-titulo {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .logo {
+        height: 60px;
+    }
 }
 
 /* Carrinho de Compras */
